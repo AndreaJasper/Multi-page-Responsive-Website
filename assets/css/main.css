@@ -1,3 +1,116 @@
 body {
+    margin-top: 50px;
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
+
+
+
+.container h6 {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+
+
+/* HEADER*/
+
+a.navbar-brand {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.site-header {
+    border-bottom: 1px solid #fff;
+}
+
+li.nav-item {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+li.nav-item a {
+    color: #fff;
+}
+
+
+
+/* HERO IMAGE */
+.fullscreen {
+    height: 100vh;
+}
+
+.image-bg{
+    background-image: url("assets/img/vent1.jpg");
+}
+
+.background-image-holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #292929;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.image-bg .container, .image-bg div[class*='col-'] {
+    position: relative;
+    z-index: 3;
+}
+
+img.background-image {
+    width: 100%;
+}
+
+.v-align-transform {
+    position: relative;
+    transform: translate3d(0, -50%, 0);
+    -webkit-transform: translate3d(0, -50%, 0);
+    top: 50%;
+    z-index: 2;
+}
+
+img.hero-statement {
+    width: 50%;
+}
+
+
+.hero-content {
+    margin-top: 200px;
+    margin-bottom: 400px;
+}
+
+/*
+
+.hero-image-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+
+.full-screen {
+    height: 100vh;
+}
+
+img.hero-image {
+    width: 100%;
+}
+
+.hero-content {
+    margin: 200px 0 200px 0;
+}
+*/
