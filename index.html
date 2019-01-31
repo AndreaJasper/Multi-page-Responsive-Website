@@ -3,20 +3,33 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Multi-page Responsive Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+
+    <title>Multi-page Responsive Website</title>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css">
+
+    <!-- BOOTSTRAP CORE CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="assets/css/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- GOOGLE FONT-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <script src="assets/js/main.js"></script>
+    <!--[if lt IE 9]>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <![endif]-->
 </head>
 <body>
 
     <!--THEME DESIGN FROM ENVATO MARKET-->
     
 <!-- HEADER -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header class="site-header">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">FOUNDRY</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,20 +72,35 @@
             </form>
         </div>
     </nav>
-
+</header>
 <!-- HERO IMAGE-->
-<section id="hero">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <p>Adventure travel with heart</p>
-            <h1 class="display-4">Go Boldly,<br> venture forth.</h1>
-            <p class="lead"><i class="far fa-play-circle"></i> Take a vacation on the wild side with Foundary<br>Adventure Tours and never look at life the same.</p>
+<section id=" hero full-screen image-bg">
+    <article>
+         <div class="background-image-holder">
+            <img class="background-image" src="assets/img/vent1.jpg" alt="image">
         </div>
-    </div>
+        <div class="container v-alignt-transform hero-content">
+            <div class="row">
+                <div class="col-12">
+                    <h6>Adventure travel with heart</h6>
+                    <img class="hero-statement" src="assets/img/vent1.png" alt="image">
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <div class="col-10">
+                            <p>Take a vacation on the wild side with Foundry<br>Adventure Tours and never look at life the same again.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </article>
 </section>
 <!-- COMFORT ZONE-->
 <section id="comfortZone">
-    <div>
+    <div class="container">
         <h3>Smash your comfort zone</h3>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
@@ -86,7 +114,7 @@
         <div class="row">
             <div class="col">
                 <h2>#Foundry Life</h2>
-                <p>Follow us for updates</p>
+                <h6>Follow us for updates</h6>
                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
             </div>
             <div class="col">
@@ -97,22 +125,103 @@
 </section>
 <!-- POPULAR TOURS-->
 <section id="tours">
-
+    <div class="container">
+        <h6>Popular Foundry Tours</h6>
+        <div class="row">
+            <div class="col-12">
+                <h2>Trek Nepal</h2>
+                <p>A brief description of the tour.</p>
+                <button>Explore Tour</button>
+            </div>
+            <div class="col-12">
+                <h2>Explore Antelope Canyon</h2>
+                <p>A brief description of the tour.</p>
+                <button>Explore Tour</button>
+            </div>
+            <div class="col-12">
+                <h2>Scale Sierra Nevada</h2>
+                <p>A brief description of the tour.</p>
+                <button>Explore Tour</button>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- BOOK YOUR ADVENTURE-->
 <section id="adventure">
-
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="" alt="">
+            </div>
+            <div class="col-6">
+                <h3>Book your next adventure today.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <ul>
+                    <li>All inclusive Packages</li>
+                    <li>Multi-Night Stays</li>
+                    <li>Equipment Provided</li>
+                </ul>
+                <button>Book a tour</button>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- NEWSLETTER-->
 <section id="newsletter">
-
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Keep it locked</h1>
+                <h6>Exclusive offers, travel tips & more</h6>
+                <form>
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                      </div>
+                      <div class="col">
+                        <button type="submit" class="btn btn-primary mb-2">Keep me informed</button>
+                      </div>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- FOOTER-->
 <footer>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h6>FOUNDRY</h6>
+            </div>
+            <div class="col-3">
+                <h6>Recent posts</h6>
+            </div>
+            <div class="col-3">
+                <h6>Latest updates</h6>
+            </div>
+            <div class="col-3">
+                <h6>instagram</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>&copy; 2018 Andrea Jasper</p>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-3"><i class="fab fa-twitter fa-xs"></i></div>
+                    <div class="col-3"><i class="fab fa-facebook-f fa-xs"></i></div>
+                    <div class="col-3"><i class="fab fa-dribbble fa-xs"></i></div>
+                    <div class="col-3"><i class="fab fa-vimeo-v fa-xs"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<!-- SCRIPTS FOR BOOTSTRAP  -->
+<!-- SCRIPTS FOR BOOTSTRAP AND JAVASCRIPT -->
+<script src="assets/js/main.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
