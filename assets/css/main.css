@@ -118,7 +118,7 @@ img.background-image {
 }
 
 .banner-content-box {
-    margin-top: 470px;
+    margin-top: 285px;
 }
 
 
@@ -137,9 +137,15 @@ img.background-image {
 }
 
 
-.hero-content {
-    display: table-cell;
-    vertical-align: middle;
+.hero-content button {
+    float: left;
+}
+
+.hero-content p {
+    float: left;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #fff;
 }
 
 .play-button.inline {
@@ -174,15 +180,6 @@ img.background-image {
     cursor: pointer;
     display: table;
 }
-
-.play-icon {
-    color: #fff;
-    width: 80px;
-    height: 80px;
-    display: table-cell;
-    vertical-align: middle;
-}
-
 
 .play-content p {
     color: #fff;
